@@ -8,21 +8,17 @@ public class Principal {
 		int x = 3;
 		int y = 2;
 		
-		String coordenada1;
-		String coordenada2;
-		
 		Punto coord1 = new Punto();
 		
-		coordenada1 = coord1.toString();
-		
-		System.out.println("Coordenada 1 --> " + coordenada1);
+		coord1.pintar();
 		
 		Punto coord2 = new Punto(x, y);
 		
-		coordenada2 = coord2.toString();
+		coord2.pintar();
 		
-		System.out.println("Coordenada 2 --> " + coordenada2);
+		Punto coord3 = new Punto(coord2);
 		
+		coord3.pintar();
 		
 
 	}
